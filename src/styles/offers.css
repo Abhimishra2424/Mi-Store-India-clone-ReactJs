@@ -1,0 +1,14 @@
+.offersSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1vmax;
+}
+.offersSection img {
+  margin: 0 1vmax;
+  transition: all 0.5s;
+}
+
+.offersSection img:hover {
+  box-shadow: 6px 6px 15px rgba(53, 53, 53, 0.363);
+}
