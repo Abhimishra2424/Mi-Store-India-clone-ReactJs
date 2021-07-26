@@ -1,7 +1,6 @@
 import React from "react";
 import "../styles/Navbar.css";
 import { logo } from "../data/data.json";
-import { Link } from "react-router-dom";
 
 const searchIcon = (
   <svg
@@ -19,45 +18,42 @@ const searchIcon = (
 function Navbar() {
   return (
     <div className="nav">
-
       <div className="logo">
-        <Link to="/">
+        <a href="/">
           <img id="logoIamge" src={logo} alt="Not" />
-        </Link>
-     </div>
-
-        <Link className="navlinks" to="/miphones">
-          Mi phones
-        </Link>
-        <Link className="navlinks" to="/redmiphones">
-          Redmi phones
-        </Link>
-        <Link className="navlinks" to="/tv">
-          Tv
-        </Link>
-        <Link className="navlinks" to="/laptops">
-          Laptops
-        </Link>
-        <Link className="navlinks" to="/lifestyle">
-          Fitness & Lifestyles
-        </Link>
-        <Link className="navlinks" to="/home">
-          Home
-        </Link>
-        <Link className="navlinks" to="audio">
-          Radio
-        </Link>
-        <Link className="navlinks" to="accessories">
-          Accessories
-        </Link>
-
-        <div className="searchbox">
-          <input type="text" name="search" placeholder="Search Products" />
-          {searchIcon}
-        </div>
-
-
+        </a>
       </div>
+
+      <a className="navlinks" href="/miphones">
+        Mi phones
+      </a>
+      <a className="navlinks" href="/redmiphones">
+        Redmi phones
+      </a>
+      <a className="navlinks" href="/tv">
+        Tv
+      </a>
+      <a className="navlinks" href="/laptops">
+        Laptops
+      </a>
+      <a className="navlinks" href="/lifestyle">
+        Fitness & Lifestyles
+      </a>
+      <a className="navlinks" href="/home">
+        Home
+      </a>
+      <a className="navlinks" href="audio">
+        Radio
+      </a>
+      <a className="navlinks" href="accessories">
+        Accessories
+      </a>
+
+      <div className="searchbox">
+        <input type="text" name="search" placeholder="Search Products" />
+        {searchIcon}
+      </div>
+    </div>
   );
 }
 
